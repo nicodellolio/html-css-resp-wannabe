@@ -111,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -132,9 +133,39 @@ img {
     --wanna-thirdary: #222222;
 }
 
+
+/* MOBILE MEDIA QUERY FROM 50PX TO 480PX */
 @media screen and (max-width: 480px) {
-    .site-header {
-        font-size: 7rem;
-        background-color: yellow;
+
+    .site_header {
+        width: 100%;
     }
+
+    .container {
+        max-width: 400px;
+        & .card p{
+            margin: 0 0 4rem 0;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+
+        & .col {
+            width: 100%;
+        }
+    }
+
+    section.why-us{
+        background-color: var(--wanna-thirdary);
+        padding: 3rem 0;
+        margin: -3em 0 0 0;
+
+        & .col.col-left{
+            margin-bottom: 3rem;
+        }
+    }
+
 }
+
