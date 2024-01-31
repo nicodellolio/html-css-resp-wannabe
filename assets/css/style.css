@@ -135,22 +135,40 @@ img {
 
 
 /* MOBILE MEDIA QUERY FROM 50PX TO 480PX */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px){
 
-    .site_header {
+    .container{
+        max-width: 480px;
         width: 100%;
     }
+    
+    div.card{
+        width: 100%;
 
-    .container {
-        max-width: 400px;
-        & .card p{
+        & p{
             margin: 0 0 4rem 0;
+            font-size: 1.25rem;
+        }
+    
+        & h3{
+            font-size: 1.75rem;
         }
     }
+
+
+    .steps{
+        width: 100%
+    }
+
+    .lessons .col img{
+        height: 233px;
+    }
+    
 
     .row {
         display: flex;
         flex-direction: column;
+        width: 100%;
 
         & .col {
             width: 100%;
@@ -169,3 +187,10 @@ img {
 
 }
 
+/*  TABLET MEDIA QUERY FROM 480PX TO 768PX */
+@media screen and (min-width: 481px) and (max-width: 768px){
+    
+    .site-header{
+        width: 100%;
+    }
+}
