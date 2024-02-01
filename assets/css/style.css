@@ -193,4 +193,73 @@ img {
     .site-header{
         width: 100%;
     }
+    .container{
+        max-width: 768px;
+        width: 100%;
+    }
+    
+    div.card{
+        width: 100%;
+
+        & p{
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    
+        & h3{
+            font-size: 1.75rem;
+        }
+    }
+
+
+    .steps{
+        width: 100%
+    }
+
+    .lessons .col img{
+        height: 180px;
+    }
+    
+
+    .row {
+        display: flex;
+        /* flex-direction: column; */
+        width: 100%;
+
+        & .col {
+            width: 100%;
+        }
+    }
+
+    section.why-us{
+        padding: 3rem 0;
+        margin: -3em 0 0 0;
+
+        & h2{
+            font-size: 1.75rem;
+        }
+
+        
+        
+        
+        /* & img{
+            width: 80%;
+        } */
+        
+        & .col.col-left{
+            width: 60%
+        }
+        
+        .col-right{
+            & h3{
+                font-size: 1.25rem
+            }
+            
+            & p{
+                font-size: 0.9rem;
+            }
+            
+        }
+    }
+
 }
