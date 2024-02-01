@@ -223,7 +223,6 @@ img {
 
     .row {
         display: flex;
-        /* flex-direction: column; */
         width: 100%;
 
         & .col {
@@ -238,13 +237,6 @@ img {
         & h2{
             font-size: 1.75rem;
         }
-
-        
-        
-        
-        /* & img{
-            width: 80%;
-        } */
         
         & .col.col-left{
             width: 60%
@@ -262,4 +254,92 @@ img {
         }
     }
 
+}
+
+/*  DESKTOP MEDIA QUERY FROM 768PX TO 1160PX */
+@media screen and (min-width: 769px) and (max-width: 1160px){
+    
+    .site-header{
+        width: 100%;
+        margin-top: 1.5rem;
+
+        & h1{
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .container{
+        max-width: 1160px;
+        width: 65%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        & h2{
+            font-size: 1.25rem
+        }
+    }
+    
+    div.card{
+        width: 100%;
+
+        & p{
+            margin: 0;
+            font-size: 0.6rem;
+        }
+    
+        & h3{
+            font-size: 1rem;
+        }
+    }
+
+    .lessons .col img{
+        height: 120px;
+    }
+
+    .steps{
+        width: 100%;
+        margin: 2rem 0 3rem 0;
+        padding: 1.5rem 0
+
+    }
+    
+    .steps h2{
+        margin-bottom: 1rem
+    }
+    
+
+    .row {
+        display: flex;
+        align-self: center;
+        width: 650px;
+
+        & .col {
+            width: 100%;
+        }
+    }
+
+    section.why-us{
+        padding: 3rem 0;
+        margin: -3em 0 0 0;
+
+        & h2{
+            font-size: 1.25rem;
+        }
+        
+        & .col.col-left{
+            width: 60%
+        }
+        
+        .col-right{
+            & h3{
+                font-size: 1rem
+            }
+            
+            & p{
+                font-size: 0.6rem;
+            }
+        }
+    }
 }
